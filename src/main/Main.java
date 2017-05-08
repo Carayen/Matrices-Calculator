@@ -89,6 +89,9 @@ public class Main {
 				if(array1Col == array2Row){
 					System.out.println("\nMultiplication Matrix");
 					System.out.print(matrix1.toString(matrix1.multiplication()));
+				} else if(array2Col == array1Row){
+					System.out.println("\nMultiplication Matrix");
+					System.out.print(matrix1.toString(matrix1.multiplication()));
 				} else{
 					throw new IllegalArgumentException("Array1(Column): " + array2Col + " did not match Array2(Row): " + array2Row + ".");
 				}
@@ -97,7 +100,7 @@ public class Main {
 			}else{
 				throw new IllegalArgumentException("Choose: " + mathChoice + " but did not match with A, S, M, or Q.");
 			}
-			System.out.print("Choose whether you want to add, subtract, or multiply(A:Add, S:Subtract, M:Multiply, Z:Quit): ");
+			System.out.print("Choose whether you want to add, subtract, or multiply(A:Add, S:Subtract, M:Multiply, Q:Quit): ");
 			mathChoice = input.next();
 		}
 	}
